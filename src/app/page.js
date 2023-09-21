@@ -1,8 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Loading1 from "@/components/loading/loading1";
-import Loading2 from "@/components/loading/loading2";
-import Loading3 from "@/components/loading/loading3";
+import RandomLoading from "@/components/loading/randomLoading";
 
 const HomePage = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -17,7 +15,7 @@ const HomePage = () => {
   }, []);
 
   if (isLoading) {
-    return <Loading3 />;
+    return <RandomLoading />;
   }
 
   return (
