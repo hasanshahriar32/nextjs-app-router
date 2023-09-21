@@ -1,6 +1,4 @@
-import Navbar from "@/components/Shared/Navbar";
 import "./globals.css";
-import Footer from "@/components/Shared/Footer";
 
 export const metadata = {
   title: "Create Next App",
@@ -10,11 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <Navbar />
-        {children}
-        <Footer />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
